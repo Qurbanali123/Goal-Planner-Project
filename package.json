@@ -15,16 +15,15 @@
     "react-scripts": "5.0.1"
   },
   "scripts": {
-    "postinstall": "chmod +x node_modules/.bin/react-scripts",
+    "postinstall": "node ./scripts/chmod-react-scripts.js",
     "start": "react-scripts start",
-    "prebuild": "chmod +x node_modules/.bin/react-scripts || true",
+    "prebuild": "node ./scripts/chmod-react-scripts.js",
     "build": "node ./node_modules/react-scripts/scripts/build.js",
     "prevercel-build": "node ./scripts/chmod-react-scripts.js",
     "vercel-build": "node ./scripts/run-build.js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-
   "browserslist": {
     "production": [
       ">0.2%",
