@@ -2,9 +2,9 @@
   "name": "goal-planner",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "node": "18.x"
-  },
+    "engines": {
+      "node": "24.x"
+    },
   "dependencies": {
     "chart.js": "^4.4.0",
     "date-fns": "^2.30.0",
