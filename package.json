@@ -15,6 +15,7 @@
     "react-scripts": "5.0.1"
   },
   "scripts": {
+    "postinstall": "chmod +x node_modules/.bin/react-scripts",
     "start": "react-scripts start",
     "prebuild": "chmod +x node_modules/.bin/react-scripts || true",
     "build": "node ./node_modules/react-scripts/scripts/build.js",
