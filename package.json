@@ -16,7 +16,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "prebuild": "chmod +x node_modules/.bin/react-scripts || true",
+    "build": "node ./node_modules/react-scripts/scripts/build.js",
+    "prevercel-build": "node ./scripts/chmod-react-scripts.js",
+    "vercel-build": "node ./scripts/run-build.js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
