@@ -1460,6 +1460,22 @@ body {
 
   .nav-label {
     display: none;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--bg-primary);
+    padding: 4px 8px;
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-lg);
+    font-size: 0.75rem;
+    z-index: 10;
+    border: 1px solid var(--border);
+    color: var(--text-primary);
+  }
+
+  .nav-link:hover .nav-label {
+    display: block;
   }
 
   .stats-grid,
